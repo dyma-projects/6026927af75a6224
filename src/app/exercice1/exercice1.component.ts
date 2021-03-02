@@ -13,4 +13,16 @@ export class Exercice1Component implements OnInit {
   ngOnInit() {
   }
 
+  increment() {
+    this.compteur++;
+  }
+
+  decrement() {
+    this.compteur--;
+
+    if(this.compteur <= 0) {
+      this.compteur = 0;
+    }
+  }
+
 }
